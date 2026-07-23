@@ -1,6 +1,6 @@
 const TL={yesno:"Yes / No",review:"Review",rsvp:"RSVP",travel:"Travel & RSVP",podcast:"Podcast",info:"FYI",reply:"Reply needed",action:"Action needed"};
 const E=s=>String(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const WH='https://hooks.slack'+'.com/services/T08'+'PBAKU6TA/B0BKB'+'FLQV45/as6lkml'+'BtlqqZibAXgqr7Um3';
+const WH='https://hooks.slack'+'.com/services/T08'+'PBAKU6TA/B0BJZ'+'EGFSP9/4pe5gw1'+'cQT0b5Fx3uGM5LEJ9';
 let nt={};
 function sendSlack(section,title,field,value){
   const text='\u{1F4CB} *Check-in Response*\n*'+section+'* \u2014 '+title+'\n'+field+': '+value;
