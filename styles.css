@@ -1,0 +1,78 @@
+
+:root{--bg:#f5f6fa;--card:#fff;--text:#1f2937;--muted:#667085;--border:#dde1ea;--blue:#2563eb;--blue2:#e8f0ff;--blueDark:#1d4ed8;--green:#087443;--greenBg:#ecfdf3;--amber:#b45309;--amberBg:#fffbeb;--red:#d92d20;--shadow:0 1px 3px rgba(16,24,40,.08),0 1px 2px rgba(16,24,40,.06)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:15px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:50}
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+h1{font-size:26px;line-height:1.2;margin:0 0 4px}
+.subtitle-top{color:var(--muted);font-size:14px;margin:0 0 14px}
+.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.stat{background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px 12px}
+.stat strong{display:block;font-size:22px;line-height:1}
+.stat span{font-size:12px;color:var(--muted)}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap}
+.toolbar input,.toolbar button{border:1px solid var(--border);background:#fff;border-radius:9px;padding:9px 12px;font:inherit;font-size:14px}
+.toolbar button{cursor:pointer}
+.toolbar button.primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.toolbar button:hover{border-color:#b8c0d0}
+main{max-width:1100px;margin:0 auto;padding:20px;padding-bottom:80px}
+.notice{background:var(--amberBg);border:1px solid #fde68a;border-radius:12px;padding:14px 16px;margin-bottom:20px;font-size:14px;color:#78350f}
+.notice strong{color:#92400e}
+.section{margin:24px 0}
+.section-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;padding-bottom:6px;border-bottom:2px solid var(--border)}
+.section-header h2{font-size:17px;font-weight:700}
+.section-header span{color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;box-shadow:var(--shadow);transition:border-color .2s}
+.card:hover{border-color:#b8c0d0}
+.card.type-travel_event{border-color:#fbbf24;background:#fffefb}
+.card.type-podcast{grid-column:1/-1}
+.card.type-rsvp{border-color:#a78bfa}
+.card.type-info{background:#f9fafb}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.pill{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:#344054;background:#f2f4f7;border-radius:99px;padding:3px 9px}
+.type-travel_event .pill{background:#fef3c7;color:#92400e}
+.type-rsvp .pill{background:#ede9fe;color:#5b21b6}
+.type-info .pill{background:#ecfdf3;color:#065f46}
+.done{font-size:13px;color:var(--muted);display:flex;gap:5px;align-items:center;cursor:pointer}
+.card h3{font-size:15px;font-weight:700;margin-bottom:6px;line-height:1.3}
+.subtitle{font-size:13px;color:var(--muted);margin-bottom:10px;line-height:1.4}
+.question{font-weight:600;margin:10px 0 6px;color:#111827}
+.card p{margin:6px 0;font-size:14px;line-height:1.5}
+.body-list{margin:6px 0 6px 18px;font-size:14px}
+.body-list li{margin-bottom:4px;line-height:1.5}
+.ext-link{display:inline-flex;align-items:center;gap:4px;background:var(--blue2);color:var(--blueDark);border-radius:8px;padding:6px 10px;font-size:13px;font-weight:600;text-decoration:none;margin:8px 0}
+.ext-link.small{padding:4px 8px;font-size:12px;margin:0}
+.ext-link.disabled{background:#f2f4f7;color:#999;cursor:default;text-decoration:line-through}
+.ext-link:hover{background:#d4e4ff}
+.flight-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.flight-card{background:#f8f9fb;border:1px solid var(--border);border-radius:10px;padding:10px}
+.flight-label{font-weight:700;font-size:13px;margin-bottom:6px;color:var(--blueDark)}
+.flight-row{font-size:13px;font-weight:600;margin-bottom:2px}
+.flight-dir{color:var(--muted);font-weight:400;font-size:11px;text-transform:uppercase;letter-spacing:.04em;margin-right:4px}
+.flight-detail{font-size:12px;color:var(--muted);margin-bottom:6px}
+.flight-price{font-size:14px;font-weight:700;color:var(--green)}
+.flight-note{font-size:12px;color:var(--amber);background:var(--amberBg);border:1px solid #fde68a;border-radius:8px;padding:6px 10px;margin:8px 0}
+.activity-choices{margin:10px 0}
+.activity-choices label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}
+.segmented{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0;align-items:center}
+.segmented .seg-label{font-size:13px;font-weight:600;margin-right:4px}
+.segmented button{border:1px solid var(--border);background:#fff;border-radius:99px;padding:7px 12px;cursor:pointer;font-size:13px;transition:all .15s}
+.segmented button:hover{border-color:#b8c0d0;background:#f9fafb}
+.segmented button.selected{background:var(--blue);color:#fff;border-color:var(--blue)}
+.segmented.small button{padding:5px 10px;font-size:12px}
+.podcast-list{margin:10px 0}
+.podcast-item{background:#f8f9fb;border:1px solid var(--border);border-radius:10px;padding:12px;margin-bottom:10px}
+.podcast-name{font-weight:700;font-size:14px;margin-bottom:4px}
+.bullet-sub{font-size:13px;color:#344054;margin-bottom:6px;line-height:1.4}
+.podcast-note{width:100%;border:1px solid var(--border);border-radius:8px;padding:7px;font:inherit;font-size:13px;margin-top:6px}
+.notes{display:block;margin-top:10px}
+.notes textarea{width:100%;min-height:64px;margin-top:5px;border:1px solid var(--border);border-radius:9px;padding:9px;resize:vertical;font:inherit;font-size:13px}
+.notes{font-size:13px;color:#344054}
+.meta{margin-top:8px}
+.saved{font-size:11px;color:var(--muted)}
+.saved.has-data{color:var(--green);font-weight:600}
+.footer-actions{position:fixed;right:16px;bottom:16px;display:flex;gap:8px;z-index:60}
+.footer-actions button{border:0;border-radius:99px;background:#111827;color:#fff;padding:11px 16px;box-shadow:0 4px 12px rgba(0,0,0,.15);cursor:pointer;font:inherit;font-size:14px}
+.footer-actions button.secondary{background:#fff;color:#111827;border:1px solid var(--border)}
+@media(max-width:780px){.cards,.flight-options,.summary{grid-template-columns:1fr}.card.type-podcast{grid-column:auto}.wrap,main{padding-left:14px;padding-right:14px}}
